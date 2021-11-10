@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "dd684a30-9f6c-45e6-9f4b-ae2e60c2fd6f"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -20,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
