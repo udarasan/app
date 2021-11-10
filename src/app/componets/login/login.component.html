@@ -1,0 +1,49 @@
+<div class="container" id="logins">
+  <div id="login">
+    <div class="row">
+      <div class="col">
+        <div class="container" id="leftSide">
+          <div class="row">
+            <h1 id="companyNameFirst">I-phen</h1>
+          </div>
+          <div class="row">
+            <h1 id="companyNameSecond">Technologies</h1>
+          </div>
+          <div>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form There are
+              many variations of passages of Lorem Ipsum available
+            </p>
+            <span class="m-0">
+              <p style="font-family: 'sans-serif';font-style: italic;font-size:small">design & developed by : <a href="https://lk.linkedin.com/in/udarasan">Udara San</a></p>
+            </span>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="container">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
